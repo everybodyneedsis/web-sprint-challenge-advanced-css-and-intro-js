@@ -251,7 +251,6 @@ function get20s(/*Your Code Here*/){
 }
 
 
-
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
  1. Receive an array
