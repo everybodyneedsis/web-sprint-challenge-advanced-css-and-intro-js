@@ -357,8 +357,7 @@ function getHTML(data){
   for(artists in data) {
     console.log(html);
   }
-
-  }
+}
 
 
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
