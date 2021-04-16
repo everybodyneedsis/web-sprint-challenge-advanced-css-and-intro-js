@@ -271,7 +271,7 @@ console.log(get20s(artists));
 
  function removeArtist(arr, index){
   for(let i = 0; i < arr.length; i++){
-    if(arr[i].splice(index, 1)){
+    if(arr.splice(index, 1)){
       return arr.length;
     }
   }
@@ -297,9 +297,18 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function addArtist(arr){
+  arr.push({
+    "id": 20,
+    "name": "Mitchell Griffith",
+    "years": "1990-2021",
+    "genre": "Web Design",
+    "Nationality": "American",
+    "bio": "This is the bio section",
+  })
+  return arr;
+ }
+ console.log(addArtist(artists))
 
   
 
@@ -310,11 +319,16 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
-  /*Your Code Here*/
-}
-
-
+function lotsOfArt(artists){
+  let a = [];
+  for(let i=0;i < artists.length; i++) {
+    if(artists[i].paintings > 100) {
+      a.push(artists[i].name);
+    }
+  }
+  return a;
+  }
+  console.log(lotsOfArt(artists))
 
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -339,9 +353,10 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
-
-    /* Code here */
+function getHTML(data){
+  for(artists in data) {
+    console.log(html);
+  }
 
   }
 
